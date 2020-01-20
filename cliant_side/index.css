@@ -7,7 +7,7 @@ html body {
 	filter: brightness(80%);
 	width: 100vw; height: 100vh;
 	position: fixed;
-	background-image:url(ink.jpg);
+	background-image:url(Resources/ink.jpg);
 	background-repeat:  no-repeat;
 	background-size:cover;
 }
