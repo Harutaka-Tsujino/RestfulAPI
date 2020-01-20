@@ -1,0 +1,46 @@
+html body {
+	width: 100vw; height: 100vh;
+	margin: 0;
+}
+
+#background {
+	filter: brightness(80%);
+	width: 100vw; height: 100vh;
+	position: fixed;
+	background-image:url(ink.jpg);
+	background-repeat:  no-repeat;
+	background-size:cover;
+}
+
+#canvas {
+	width: 100vw; height: 100vh;
+	position: absolute;
+}
+
+#centerText {
+	display:inline-block;
+	user-select: none;
+	font-weight: 200;
+	font-size: 3.7em;
+	width: 100vw; height: 100vh;
+	margin: 0;
+	text-align: center;
+	letter-spacing: 0.6em;
+	line-height: 16.5em;
+	font-family: fantasy;
+	position: absolute;
+	color: rgba(240, 255, 255, 0.863);
+}
+
+#inputForm{
+	position: absolute;
+	color: azure;
+	bottom: 0; right: 0;
+	text-align: right;
+	user-select: none;
+}
+
+input{
+	color: azure;
+	background-color: rgba(240, 255, 255, 0);
+}
