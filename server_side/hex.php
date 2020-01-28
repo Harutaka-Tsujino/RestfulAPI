@@ -16,6 +16,8 @@ class Hex
 
     public function post($id, $param)
     {
+        if (!isHexString($param)) return;
+
         $this->request("INSERT INTO t_hex (id, hex) VALUES ('$id', '$param');");
     }
 
@@ -26,7 +28,19 @@ class Hex
 
     public function put($id, $param)
     {
+        if (!isHexString($param)) return;
+
         $this->request("UPDATE t_hex SET hex = '$param' WHERE id = '$id';");
+    }
+
+    private function isHexString($str)
+    {
+        $length = strlen($str);
+
+        if ($length < 6 || 8 < $length) return false;
+        if (ctype_xdigit($param)) return false;
+
+        return true;
     }
 
     private function request($query)
